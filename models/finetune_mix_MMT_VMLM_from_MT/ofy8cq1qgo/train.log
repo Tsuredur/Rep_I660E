@@ -1,0 +1,80 @@
+INFO - 11/23/24 01:33:56 - 0:00:00 - ============ Initialized logger ============
+INFO - 11/23/24 01:33:56 - 0:00:00 - accumulate_gradients: 4
+                                     adapters: False
+                                     amp: 1
+                                     attention_dropout: 0
+                                     batch_size: 1
+                                     beam_size: 3
+                                     cache_dir: ./hugging_face_cache
+                                     clip_grad_norm: 5
+                                     command: python main.py --exp_name finetune_mix_MMT_VMLM_from_MT --dump_path './models' --data_path 'D:\I660E\VGAMT\data\multi30k' --src_lang en --tgt_lang fr --cache_dir './hugging_face_cache' --epoch_size 580 --batch_size 1 --dropout '0.4' --optimizer 'adam,lr=0.00001' --eval_bleu true --max_epoch 5000 --max_len 80 --num_workers 0 --stopping_criterion 'valid_en-fr_mt_bleu,10' --validation_metrics 'valid_en-fr_mt_bleu' --iter_seed 42 --other_seed 1 --smoothing '0.1' --amp 1 --fp16 True --accumulate_gradients 4 --exp_id "ofy8cq1qgo"
+                                     commute_generation: False
+                                     data_mix_path: 
+                                     data_path: D:\I660E\VGAMT\data\multi30k
+                                     debug: False
+                                     device: cuda
+                                     dropout: 0.4
+                                     dump_path: ./models\finetune_mix_MMT_VMLM_from_MT\ofy8cq1qgo
+                                     early_stopping: False
+                                     encoder_attn_mask_text_only: False
+                                     epoch_size: 580
+                                     eval_bleu: True
+                                     eval_only: False
+                                     exp_id: ofy8cq1qgo
+                                     exp_name: finetune_mix_MMT_VMLM_from_MT
+                                     features_mix_path: 
+                                     features_path: ./data/multi30k/features
+                                     features_type: mdetr
+                                     fp16: True
+                                     freeze_text_parameters: False
+                                     global_rank: -1
+                                     grad_l2_norm: False
+                                     guided_self_attention: False
+                                     hyp_path: ./models\finetune_mix_MMT_VMLM_from_MT\ofy8cq1qgo\hypothesis
+                                     init_dec_from_enc: False
+                                     init_epoch: -1
+                                     iter_seed: 42
+                                     length_penalty: 1
+                                     local_rank: -1
+                                     master_port: -1
+                                     max_epoch: 5000
+                                     max_len: 80
+                                     min_epoch: -1
+                                     mix_xp: 0
+                                     multimodal_model: False
+                                     num_workers: 0
+                                     optimizer: adam,lr=0.00001
+                                     other_seed: 1
+                                     prob_mask_text: 0.0
+                                     reload_checkpoint: 
+                                     reload_model: 
+                                     reload_optim: False
+                                     save_periodic: 0
+                                     smoothing: 0.1
+                                     src_lang: en
+                                     start_new_xp_from_ckpt: False
+                                     stopping_criterion: valid_en-fr_mt_bleu,10
+                                     test_data_set: 
+                                     tgt_lang: fr
+                                     validation_metrics: valid_en-fr_mt_bleu
+                                     world_size: 1
+INFO - 11/23/24 01:33:56 - 0:00:00 - The experiment will be stored in ./models\finetune_mix_MMT_VMLM_from_MT\ofy8cq1qgo
+                                     
+INFO - 11/23/24 01:33:56 - 0:00:00 - Running command: python main.py --exp_name finetune_mix_MMT_VMLM_from_MT --dump_path './models' --data_path 'D:\I660E\VGAMT\data\multi30k' --src_lang en --tgt_lang fr --cache_dir './hugging_face_cache' --epoch_size 580 --batch_size 1 --dropout '0.4' --optimizer 'adam,lr=0.00001' --eval_bleu true --max_epoch 5000 --max_len 80 --num_workers 0 --stopping_criterion 'valid_en-fr_mt_bleu,10' --validation_metrics 'valid_en-fr_mt_bleu' --iter_seed 42 --other_seed 1 --smoothing '0.1' --amp 1 --fp16 True --accumulate_gradients 4
+
+INFO - 11/23/24 01:34:06 - 0:00:10 - Found 515 parameters in model.
+INFO - 11/23/24 01:34:07 - 0:00:10 - Optimizers: model
+INFO - 11/23/24 01:34:07 - 0:00:10 - ============ Starting epoch 0 ... ============
+INFO - 11/23/24 01:34:26 - 0:00:29 -       5 -    0.26 sent/s - MT-en-fr: 11.8769 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:34:37 - 0:00:41 -      10 -    0.44 sent/s - MT-en-fr: 10.4228 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:34:49 - 0:00:52 -      15 -    0.43 sent/s - MT-en-fr:  9.0496 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:35:03 - 0:01:07 -      20 -    0.34 sent/s - MT-en-fr:  6.6341 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:35:15 - 0:01:18 -      25 -    0.44 sent/s - MT-en-fr:  5.8886 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:35:25 - 0:01:29 -      30 -    0.47 sent/s - MT-en-fr:  7.1283 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:35:37 - 0:01:40 -      35 -    0.45 sent/s - MT-en-fr:  7.1982 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:35:51 - 0:01:55 -      40 -    0.35 sent/s - MT-en-fr:  5.8172 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:36:02 - 0:02:06 -      45 -    0.46 sent/s - MT-en-fr:  5.9758 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:36:14 - 0:02:17 -      50 -    0.42 sent/s - MT-en-fr:  5.5394 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:36:25 - 0:02:29 -      55 -    0.43 sent/s - MT-en-fr:  6.4021 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:36:40 - 0:02:43 -      60 -    0.35 sent/s - MT-en-fr:  6.6312 -  - model LR: 1.0000e-05
+INFO - 11/23/24 01:36:52 - 0:02:55 -      65 -    0.41 sent/s - MT-en-fr:  4.9518 -  - model LR: 1.0000e-05

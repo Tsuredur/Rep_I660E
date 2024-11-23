@@ -1,0 +1,118 @@
+INFO - 11/23/24 00:56:32 - 0:00:00 - ============ Initialized logger ============
+INFO - 11/23/24 00:56:32 - 0:00:00 - accumulate_gradients: 4
+                                     adapters: False
+                                     amp: 1
+                                     attention_dropout: 0
+                                     batch_size: 2
+                                     beam_size: 3
+                                     cache_dir: /home_lab_local/s2410093/VGAMT/VGAMT/hugging_face_cache
+                                     clip_grad_norm: 5
+                                     command: python /home_lab_local/s2410093/VGAMT/VGAMT/main.py --beam_size 3 --exp_name train_MT_from_MBART --dump_path '/home_lab_local/s2410093/VGAMT/VGAMT/models' --data_path '/home_lab_local/s2410093/VGAMT/VGAMT/data/text-only/en-fr' --src_lang en --tgt_lang fr --dropout '0.4' --batch_size 2 --optimizer 'adam_inverse_sqrt,lr=0.0001,warmup_updates=2000' --epoch_size 500 --eval_bleu true --max_epoch 500 --max_len 80 --num_workers 1 --stopping_criterion 'valid_en-fr_mt_bleu,50' --validation_metrics 'valid_en-fr_mt_bleu' --iter_seed 42 --other_seed 42 --smoothing '0.1' --save_periodic 1 --cache_dir '/home_lab_local/s2410093/VGAMT/VGAMT/hugging_face_cache' --amp 1 --fp16 True --accumulate_gradients 4 --exp_id "prjihs1kut"
+                                     commute_generation: False
+                                     data_mix_path: 
+                                     data_path: /home_lab_local/s2410093/VGAMT/VGAMT/data/text-only/en-fr
+                                     debug: False
+                                     device: cuda
+                                     dropout: 0.4
+                                     dump_path: /home_lab_local/s2410093/VGAMT/VGAMT/models/train_MT_from_MBART/prjihs1kut
+                                     early_stopping: False
+                                     encoder_attn_mask_text_only: False
+                                     epoch_size: 500
+                                     eval_bleu: True
+                                     eval_only: False
+                                     exp_id: prjihs1kut
+                                     exp_name: train_MT_from_MBART
+                                     features_mix_path: 
+                                     features_path: ./data/multi30k/features
+                                     features_type: mdetr
+                                     fp16: True
+                                     freeze_text_parameters: False
+                                     global_rank: -1
+                                     grad_l2_norm: False
+                                     guided_self_attention: False
+                                     hyp_path: /home_lab_local/s2410093/VGAMT/VGAMT/models/train_MT_from_MBART/prjihs1kut/hypothesis
+                                     init_dec_from_enc: False
+                                     init_epoch: -1
+                                     iter_seed: 42
+                                     length_penalty: 1
+                                     local_rank: -1
+                                     master_port: -1
+                                     max_epoch: 500
+                                     max_len: 80
+                                     min_epoch: -1
+                                     mix_xp: 0
+                                     multimodal_model: False
+                                     num_workers: 1
+                                     optimizer: adam_inverse_sqrt,lr=0.0001,warmup_updates=2000
+                                     other_seed: 42
+                                     prob_mask_text: 0.0
+                                     reload_checkpoint: 
+                                     reload_model: 
+                                     reload_optim: False
+                                     save_periodic: 1
+                                     smoothing: 0.1
+                                     src_lang: en
+                                     start_new_xp_from_ckpt: False
+                                     stopping_criterion: valid_en-fr_mt_bleu,50
+                                     test_data_set: 
+                                     tgt_lang: fr
+                                     validation_metrics: valid_en-fr_mt_bleu
+                                     world_size: 1
+INFO - 11/23/24 00:56:32 - 0:00:00 - The experiment will be stored in /home_lab_local/s2410093/VGAMT/VGAMT/models/train_MT_from_MBART/prjihs1kut
+                                     
+INFO - 11/23/24 00:56:32 - 0:00:00 - Running command: python /home_lab_local/s2410093/VGAMT/VGAMT/main.py --beam_size 3 --exp_name train_MT_from_MBART --dump_path '/home_lab_local/s2410093/VGAMT/VGAMT/models' --data_path '/home_lab_local/s2410093/VGAMT/VGAMT/data/text-only/en-fr' --src_lang en --tgt_lang fr --dropout '0.4' --batch_size 2 --optimizer 'adam_inverse_sqrt,lr=0.0001,warmup_updates=2000' --epoch_size 500 --eval_bleu true --max_epoch 500 --max_len 80 --num_workers 1 --stopping_criterion 'valid_en-fr_mt_bleu,50' --validation_metrics 'valid_en-fr_mt_bleu' --iter_seed 42 --other_seed 42 --smoothing '0.1' --save_periodic 1 --cache_dir '/home_lab_local/s2410093/VGAMT/VGAMT/hugging_face_cache' --amp 1 --fp16 True --accumulate_gradients 4
+
+INFO - 11/23/24 00:56:43 - 0:00:11 - Found 515 parameters in model.
+INFO - 11/23/24 00:56:43 - 0:00:12 - Optimizers: model
+INFO - 11/23/24 00:56:43 - 0:00:12 - ============ Starting epoch 0 ... ============
+INFO - 11/23/24 00:56:45 - 0:00:14 -       5 -    4.66 sent/s - MT-en-fr:  8.7046 -  - model LR: 1.0000e-07
+INFO - 11/23/24 00:56:47 - 0:00:15 -      10 -    8.36 sent/s - MT-en-fr:  9.8768 -  - model LR: 1.0000e-07
+INFO - 11/23/24 00:56:48 - 0:00:16 -      15 -    7.30 sent/s - MT-en-fr:  8.3076 -  - model LR: 1.4995e-07
+INFO - 11/23/24 00:56:49 - 0:00:18 -      20 -    7.68 sent/s - MT-en-fr:  8.5612 -  - model LR: 1.9990e-07
+INFO - 11/23/24 00:56:51 - 0:00:19 -      25 -    7.96 sent/s - MT-en-fr: 10.0261 -  - model LR: 2.4985e-07
+INFO - 11/23/24 00:56:52 - 0:00:20 -      30 -    7.59 sent/s - MT-en-fr:  7.8894 -  - model LR: 2.9980e-07
+INFO - 11/23/24 00:56:53 - 0:00:21 -      35 -    8.19 sent/s - MT-en-fr:  8.3529 -  - model LR: 3.4975e-07
+INFO - 11/23/24 00:56:55 - 0:00:23 -      40 -    7.30 sent/s - MT-en-fr:  8.9888 -  - model LR: 3.9970e-07
+INFO - 11/23/24 00:56:56 - 0:00:24 -      45 -    7.32 sent/s - MT-en-fr:  8.0022 -  - model LR: 4.4965e-07
+INFO - 11/23/24 00:56:57 - 0:00:25 -      50 -    8.24 sent/s - MT-en-fr:  8.1844 -  - model LR: 4.4965e-07
+INFO - 11/23/24 00:56:58 - 0:00:27 -      55 -    8.85 sent/s - MT-en-fr:  8.1695 -  - model LR: 4.4965e-07
+INFO - 11/23/24 00:57:00 - 0:00:28 -      60 -    7.54 sent/s - MT-en-fr:  9.1782 -  - model LR: 5.4955e-07
+INFO - 11/23/24 00:57:01 - 0:00:29 -      65 -    8.08 sent/s - MT-en-fr:  8.0661 -  - model LR: 5.9950e-07
+INFO - 11/23/24 00:57:02 - 0:00:30 -      70 -    8.60 sent/s - MT-en-fr:  8.3088 -  - model LR: 6.4945e-07
+INFO - 11/23/24 00:57:03 - 0:00:32 -      75 -    7.70 sent/s - MT-en-fr:  9.4591 -  - model LR: 6.9940e-07
+INFO - 11/23/24 00:57:05 - 0:00:33 -      80 -    7.61 sent/s - MT-en-fr:  8.1285 -  - model LR: 7.4935e-07
+INFO - 11/23/24 00:57:06 - 0:00:34 -      85 -    7.07 sent/s - MT-en-fr:  8.1855 -  - model LR: 7.9930e-07
+INFO - 11/23/24 00:57:07 - 0:00:35 -      90 -    8.74 sent/s - MT-en-fr:  8.2885 -  - model LR: 8.4925e-07
+INFO - 11/23/24 00:57:08 - 0:00:37 -      95 -    7.67 sent/s - MT-en-fr:  7.7556 -  - model LR: 8.9920e-07
+INFO - 11/23/24 00:57:10 - 0:00:38 -     100 -    6.71 sent/s - MT-en-fr:  7.1726 -  - model LR: 9.9910e-07
+INFO - 11/23/24 00:57:11 - 0:00:39 -     105 -    7.85 sent/s - MT-en-fr:  7.7762 -  - model LR: 1.0491e-06
+INFO - 11/23/24 00:57:13 - 0:00:41 -     110 -    7.44 sent/s - MT-en-fr:  6.8388 -  - model LR: 1.0990e-06
+INFO - 11/23/24 00:57:14 - 0:00:42 -     115 -    9.18 sent/s - MT-en-fr:  7.0691 -  - model LR: 1.1489e-06
+INFO - 11/23/24 00:57:15 - 0:00:43 -     120 -    7.16 sent/s - MT-en-fr:  6.7306 -  - model LR: 1.2488e-06
+INFO - 11/23/24 00:57:16 - 0:00:45 -     125 -    8.04 sent/s - MT-en-fr:  6.5603 -  - model LR: 1.2988e-06
+INFO - 11/23/24 00:57:17 - 0:00:46 -     130 -    9.14 sent/s - MT-en-fr:  7.4837 -  - model LR: 1.3488e-06
+INFO - 11/23/24 00:57:19 - 0:00:47 -     135 -    8.37 sent/s - MT-en-fr:  6.0289 -  - model LR: 1.3987e-06
+INFO - 11/23/24 00:57:20 - 0:00:48 -     140 -    7.56 sent/s - MT-en-fr:  6.0606 -  - model LR: 1.4986e-06
+INFO - 11/23/24 00:57:21 - 0:00:49 -     145 -    8.02 sent/s - MT-en-fr:  5.9341 -  - model LR: 1.5486e-06
+INFO - 11/23/24 00:57:22 - 0:00:51 -     150 -    8.05 sent/s - MT-en-fr:  5.5145 -  - model LR: 1.5985e-06
+INFO - 11/23/24 00:57:24 - 0:00:52 -     155 -    7.49 sent/s - MT-en-fr:  5.4543 -  - model LR: 1.6484e-06
+INFO - 11/23/24 00:57:25 - 0:00:53 -     160 -    7.59 sent/s - MT-en-fr:  5.8615 -  - model LR: 1.7483e-06
+INFO - 11/23/24 00:57:26 - 0:00:55 -     165 -    7.80 sent/s - MT-en-fr:  5.5417 -  - model LR: 1.7983e-06
+INFO - 11/23/24 00:57:28 - 0:00:56 -     170 -    8.07 sent/s - MT-en-fr:  4.6216 -  - model LR: 1.8483e-06
+INFO - 11/23/24 00:57:29 - 0:00:57 -     175 -    7.77 sent/s - MT-en-fr:  4.3388 -  - model LR: 1.8982e-06
+INFO - 11/23/24 00:57:30 - 0:00:58 -     180 -    7.69 sent/s - MT-en-fr:  4.7479 -  - model LR: 1.9981e-06
+INFO - 11/23/24 00:57:31 - 0:01:00 -     185 -    7.53 sent/s - MT-en-fr:  4.2785 -  - model LR: 2.0480e-06
+INFO - 11/23/24 00:57:33 - 0:01:01 -     190 -    7.53 sent/s - MT-en-fr:  4.8453 -  - model LR: 2.0980e-06
+INFO - 11/23/24 00:57:34 - 0:01:02 -     195 -    8.32 sent/s - MT-en-fr:  4.6611 -  - model LR: 2.1479e-06
+INFO - 11/23/24 00:57:35 - 0:01:04 -     200 -    7.52 sent/s - MT-en-fr:  4.7567 -  - model LR: 2.2479e-06
+INFO - 11/23/24 00:57:37 - 0:01:05 -     205 -    7.61 sent/s - MT-en-fr:  4.3779 -  - model LR: 2.2978e-06
+INFO - 11/23/24 00:57:38 - 0:01:06 -     210 -    9.00 sent/s - MT-en-fr:  4.7675 -  - model LR: 2.3478e-06
+INFO - 11/23/24 00:57:39 - 0:01:07 -     215 -    8.42 sent/s - MT-en-fr:  3.7677 -  - model LR: 2.3977e-06
+INFO - 11/23/24 00:57:40 - 0:01:09 -     220 -    7.34 sent/s - MT-en-fr:  4.2567 -  - model LR: 2.4976e-06
+INFO - 11/23/24 00:57:42 - 0:01:10 -     225 -    7.90 sent/s - MT-en-fr:  4.1071 -  - model LR: 2.5475e-06
+INFO - 11/23/24 00:57:43 - 0:01:11 -     230 -    8.87 sent/s - MT-en-fr:  4.2863 -  - model LR: 2.5975e-06
+INFO - 11/23/24 00:57:44 - 0:01:12 -     235 -    7.78 sent/s - MT-en-fr:  3.9813 -  - model LR: 2.6474e-06
+INFO - 11/23/24 00:57:45 - 0:01:14 -     240 -    7.32 sent/s - MT-en-fr:  5.0030 -  - model LR: 2.7474e-06
+INFO - 11/23/24 00:57:47 - 0:01:15 -     245 -    8.01 sent/s - MT-en-fr:  4.1049 -  - model LR: 2.7973e-06
+INFO - 11/23/24 00:57:48 - 0:01:16 -     250 -    8.92 sent/s - MT-en-fr:  4.3018 -  - model LR: 2.8472e-06
+INFO - 11/23/24 00:57:48 - 0:01:16 - ============ End of epoch 0 ============
